@@ -49,7 +49,7 @@ async def help(client: Client, message: Message):
     start = datetime.now()
     end = datetime.now()
     resp = (end - start).microseconds / 1000
-    await message.reply_img("https://telegra.ph/file/146be6929217e4efbe12e.jpg")
+    await message.reply_photo("https://telegra.ph/file/146be6929217e4efbe12e.jpg")
     rahul = await message.reply_photo(
         photo=f"{PING_IMG}",
         caption="🍑 ᴩɪɴɢɪɴɢ... 🍑",
