@@ -34,11 +34,11 @@ class YukkiBot(Client):
         self.id = get_me.id
         try:
             await self.send_message(
-                config.LOG_GROUP_ID, "Bot Started"
+                config.LOG_GROUP_ID, "😊Bot Started"
             )
         except:
             LOGGER(__name__).error(
-                "Bot has failed to access the log Group. Make sure that you have added your bot to your log channel and promoted as admin!"
+                "😕Bot has failed to access the log Group. Make sure that you have added your bot to your log channel and promoted as admin!"
             )
             sys.exit()
         if config.SET_CMDS == str(True):
@@ -70,4 +70,4 @@ class YukkiBot(Client):
             self.name = get_me.first_name + " " + get_me.last_name
         else:
             self.name = get_me.first_name
-        LOGGER(__name__).info(f"MusicBot Started as {self.name}")
+        LOGGER(__name__).info(f"𝐯𝐢𝐣𝐚𝐲 𝐬𝐚𝐡𝐮🥀 MusicBot Started as {self.name}")
