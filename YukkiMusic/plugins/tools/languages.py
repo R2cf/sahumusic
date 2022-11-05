@@ -86,16 +86,16 @@ async def language_markup(client, CallbackQuery, _):
     old = await get_lang(CallbackQuery.message.chat.id)
     if str(old) == str(langauge):
         return await CallbackQuery.answer(
-            "You're already on same language", show_alert=True
+            "𝐕𝐈𝐉𝐀𝐘 𝐒𝐀𝐇𝐔🥀 You're already on same language", show_alert=True
         )
     try:
         _ = get_string(langauge)
         await CallbackQuery.answer(
-            "Successfully changed your language.", show_alert=True
+            "𝐕𝐈𝐉𝐀𝐘 𝐒𝐀𝐇𝐔🥀 Successfully changed your language.", show_alert=True
         )
     except:
         return await CallbackQuery.answer(
-            "Failed to change language or Language under update.",
+            "😕Failed to change language or Language under update.",
             show_alert=True,
         )
     await set_lang(CallbackQuery.message.chat.id, langauge)
